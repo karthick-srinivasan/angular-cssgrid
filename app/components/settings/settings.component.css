@@ -1,0 +1,21 @@
+.holder {
+    margin: 10px;
+    display: flex;
+    justify-content: center
+}
+
+.holder::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.holder-item {
+    float: left;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    width: 45%;
+    border: 1px solid #000;
+    background: burlywood;
+}
