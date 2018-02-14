@@ -5,17 +5,25 @@ import { HttpModule } from '@angular/http';
 import { HttpServiceService } from './services/http-service.service';
 import { AppComponent } from './app.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { HeaderComponent } from './components/header/header.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { EditComponent } from './components/edit/edit.component';
+import { ListComponent } from './components/list/list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SettingsComponent,
-    SettingsComponent
+    SettingsComponent,
+    HeaderComponent,
+    EditComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [HttpServiceService],
   bootstrap: [AppComponent]

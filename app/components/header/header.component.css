@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    top: 0;
+    padding: 5px;
+    background: blueviolet;
+}
+
+nav ul::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}

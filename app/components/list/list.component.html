@@ -1,0 +1,7 @@
+    <app-settings (text)="textScale($event)" (column)="columnChange($event)"></app-settings>
+    <div class="grid-container" [ngStyle]="{'grid-template-columns': 'repeat('+columnCount+', 1fr)'}">
+        <div class="items" *ngFor="let job of jobs"
+         [ngStyle]="{'font-size': textSize, 'background-color': job?.color}">
+            {{job?.name}}
+        </div>
+    </div>
