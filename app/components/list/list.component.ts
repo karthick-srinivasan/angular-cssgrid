@@ -7,6 +7,7 @@ import { HttpServiceService } from './../../services/http-service.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
+
 export class ListComponent implements OnInit {
 
   jobs: Array<Jobs> = [];
@@ -23,12 +24,10 @@ export class ListComponent implements OnInit {
 
   textScale(e) {
     this.textSize = (e * 5)+'px';
-    console.log(this.textSize);
   }
 
   columnChange(e) {
     this.columnCount = e;
-    console.log(this.columnCount);
   }
 
 }
